@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_ALL,"Portuguese");
+    int vetor[6], i;
+    
+    for ( i = 0; i < 6; i++ ){
+    	
+        printf("Digite o %d número inteiro: ", i + 1);
+        scanf("%d", &vetor[i]);
+    }
+    
+    printf("Números na ordem inversa:\n");
+    for (int i = 5; i >= 0; i--) {
+        printf("%d\n", vetor[i]);
+    }
+    
+    return 0;
+}
